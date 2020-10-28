@@ -24,7 +24,6 @@ for i in range(0,2):
   for j in range(0,2):
        print(mat3[i][j], end = "")
        print()
-
 #Tranpose
 X = [[40,19],
     [81,37]]
