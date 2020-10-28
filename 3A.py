@@ -1,18 +1,22 @@
-stack = [] 
-stack.append('I') 
-stack.append('a')
-stack.append('m')
-stack.append('X')
-
-
-print('Initial stack') 
-print(stack) 
-
- 
-print('Elements poped from stack:') 
-print(stack.pop()) 
-print(stack.pop()) 
-print(stack.pop()) 
-
-print('Stack after elements are poped:') 
-print(stack)
+from sys import maxsize 
+def createStack(): 
+	stack = [] 
+	return stack 
+def isEmpty(stack): 
+	return len(stack) == 0
+def push(stack, item): 
+	stack.append(item) 
+	print(item + " pushed to stack ") 	
+def pop(stack): 
+	if (isEmpty(stack)): 
+		return str(-maxsize -1) 
+	return stack.pop() 
+def peek(stack): 
+	if (isEmpty(stack)): 
+		return str(-maxsize -1) 
+	return stack[len(stack) - 1]  
+stack = createStack() 
+push(stack, str(3)) 
+push(stack, str(3)) 
+push(stack, str(1)) 
+print(pop(stack) + " popped from stack") 
