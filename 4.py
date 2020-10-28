@@ -18,7 +18,6 @@ class Stack():
         for i in l:
             a.append(i)
         print(a)
-
 s=Stack()
 
 print("Adding the element in the queue : ")
