@@ -1,4 +1,4 @@
-list1 = [18,17,15,31,14,18,10,53,74,25,41,33,89]
+list1 = [42,49,54,60,64,20,10,62,71,25,41,24,87]
 print("List = ",list1)
 size = len(list1)
 def binary_search(x):
@@ -25,12 +25,12 @@ def lsearching(n):
 			if list1[i]==n:
 				print("index of ", n," is ",i)
 				
-n = input("Enter (L) for Linear search and  (B) for Binary search \n ")
+n = input("Enter(L)for Linear Search and(B)for Binary Search\n")
 if n=="L" or n=="l":
-	v = int(input("Enter a no. from the list1 "))
+	v = int(input("Enter a no. from the list1"))
 	lsearching(v)
 elif n=="B" or n=="b":
-	v = int(input("Enter a no. from the list1 "))
-	print("index of ",v," is ",binary_search(v))
+	v = int(input("Enter a no. from the list1"))
+	print("Index of ",v," is ",binary_search(v))
 else:
 	print("Invalid input")
