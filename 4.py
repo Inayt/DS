@@ -1,12 +1,7 @@
-#Bhavya shah
-#SYCS
-#4072
 class Stack():
     def __init__(self):
-        self.items = [6,7,3,2,1]
-
-    
-    
+        self.items = [4,0,4,9,3]
+        
     def enque(self,item):
         self.items.append(item)
         print(item)
@@ -27,7 +22,7 @@ class Stack():
 s=Stack()
 
 print("Adding the element in the queue : ")
-s.enque(6)
+s.enque(5)
 print("initial queue : ")
 s.traverse()
 
