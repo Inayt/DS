@@ -9,4 +9,4 @@ def hanoi(disks, source, auxiliary, target):
  
  
 disks = int(input('Enter number of disks: '))
-hanoi(disks, 'A', 'B', 'C')
+hanoi(disks,'A','B','C')
